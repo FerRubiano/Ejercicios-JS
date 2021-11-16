@@ -1,0 +1,33 @@
+.logo {
+  width: 180px;
+  height: 80px;
+}
+
+.navbar {
+  background-color: #dec912;
+  box-shadow: 0 2px 4px rgba(0 0 0 0.5);
+  min-height: 100px;
+  font-size: 1.1rem;
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  color: orangered;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.icondetails {
+  width: 75px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+
+.nav-user {
+  padding-top: 8px;
+  color: orangered;
+}

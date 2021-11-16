@@ -1,0 +1,22 @@
+body{
+    background-image: url(../CSS/Ejercicio2/fondo.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    font-family: cursive;
+    color: blueviolet;
+    text-align: center;
+}
+
+.datos{
+    color: pink;
+    background-color: darkmagenta;
+    margin-left: 40rem;
+}
+
+
+
+
+

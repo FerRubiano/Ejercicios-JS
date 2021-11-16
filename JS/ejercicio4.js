@@ -1,0 +1,48 @@
+const login1 = document.getElementById("login1");
+const login2 = document.getElementById("login2");
+const loginUser = document.getElementById("loginUser");
+const textLogin = document.getElementById("textLogin");
+const textLogout = document.getElementById("textLogout");
+
+textLogin.style.visibility = "hidden";
+textLogout.style.visibility = "hidden";
+
+const show = () => {
+  if (textLogin.style.visibility == "hidden") {
+    textLogin.style.visibility = "visible";
+  } else {
+    textLogin.style.visibility = "hidden";
+  }
+};
+
+const show2 = () => {
+  if (textLogout.style.visibility == "hidden") {
+    textLogout.style.visibility = "visible";
+  } else {
+    textLogout.style.visibility = "hidden";
+  }
+};
+
+const iniciarSesion = () => {
+  let usuario = prompt("Ingresa tu nombre");
+  localStorage.setItem("name", usuario);
+  loginUser.innerHTML = usuario;
+};
+
+if (localStorage.getItem ("name")) {
+    loginUser.innerHTML = localStorage.getItem ("name");
+    alert ("Has iniciado sesion")
+}
+
+const cerrarSesion =()=>{
+    loginUser.innerHTML = " ";
+    localStorage.clear ();
+};
+
+login1.onclick = function (){
+iniciarSesion();
+}
+
+login2.onclick = function(){
+    cerrarSesion();
+}
